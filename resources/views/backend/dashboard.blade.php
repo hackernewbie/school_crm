@@ -2,7 +2,9 @@
 @section('page-title')
     Welcome to Dashboard
 @endsection
-
+@section('page-top-title')
+    Dashboard
+@endsection
 @section('content-body')
     <div class="container-fluid">
         <!-- Row -->

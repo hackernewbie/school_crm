@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BackendController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +19,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [BackendController::class, 'dashboard'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+    Route::get('/students', [StudentController::class, 'index'])->name('students.list');
+    Route::get('/student/{student}', [StudentController::class, 'show'])->name('student.show');
+    Route::get('/student/create', [StudentController::class, 'create'])->name('student.create');
+});
+
+
+require __DIR__ . '/auth.php';
