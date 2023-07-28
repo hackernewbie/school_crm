@@ -1,6 +1,6 @@
 <!--**********************************
             Sidebar start
-        ***********************************-->
+ ***********************************-->
 <div class="dlabnav">
     <div class="dlabnav-scroll">
         <ul class="metismenu" id="menu">
@@ -9,7 +9,6 @@
                     <i class="material-symbols-outlined">home</i>
                     <span class="nav-text">Dashboard</span>
                 </a>
-
             </li>
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
@@ -20,11 +19,10 @@
                     <li><a href="{{ route('students.list') }}">Student</a></li>
                     <li><a href="{{ route('student.show', 1) }}">Student Detail</a></li>
                     <li><a href="{{ route('student.create') }}">Add New Student</a></li>
-
                 </ul>
-
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">
                     <i class="material-symbols-outlined">person</i>
                     <span class="nav-text">Teacher</span>
                 </a>
@@ -32,13 +30,11 @@
                     <li><a href="teacher.html">Teacher</a></li>
                     <li><a href="teacher-detail.html">Teacher Detail</a></li>
                     <li><a href="add-teacher.html">Add New Teacher</a></li>
-
                 </ul>
-
             </li>
 
-
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons"> person_outline </i>
                     <span class="nav-text">Profile</span>
                 </a>
@@ -67,7 +63,8 @@
                     </li>
                 </ul>
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons"> money </i>
                     <span class="nav-text">Fees</span>
                 </a>
@@ -80,7 +77,6 @@
                     <li><a href="./chart-peity.html">Peity</a></li>
                 </ul>
             </li>
-
         </ul>
         <div class="copyright">
             <p><strong>School Admission Dashboard</strong></p>
@@ -90,4 +86,4 @@
 </div>
 <!--**********************************
             Sidebar end
-        ***********************************-->
+***********************************-->
